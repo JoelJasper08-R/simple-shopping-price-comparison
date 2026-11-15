@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Compare prices</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+    <h1>Price Compare</h1>
+    <p class="sub">Note the price of the same item in different shops and see where it is cheapest.</p>
+
+    <form id="priceForm" class="form">
+      <label>Item
+        <input type="text" id="item" placeholder="e.g. Rice 1 kg" required>
+      </label>
+      <label>Shop
+        <input type="text" id="shop" placeholder="e.g. Lakshmi Stores" required>
+      </label>
+      <label>Price (₹)
+        <input type="number" id="price" min="0" step="0.01" placeholder="e.g. 62" required>
+      </label>
+      <button type="submit">Add price</button>
+    </form>
+
+    <label class="search">Search item
+      <input type="text" id="search" placeholder="Type to filter items">
+    </label>
+
+    <section id="results"></section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
